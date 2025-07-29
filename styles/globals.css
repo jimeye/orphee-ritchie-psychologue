@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux */
+html {
+  background-color: #e2e5e4;
+}
+
+/* Police personnalisée Tinos */
+@font-face {
+  font-family: 'Tinos';
+  src: url('/fonts/TinosNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #e2e5e4;
+  color: #1f3161;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1f3161;
+}
+
+/* Classes utilitaires pour les couleurs personnalisées */
+.bg-custom-background {
+  background-color: #e2e5e4;
+}
+
+.text-custom-title {
+  color: #1f3161;
+}
+
+.text-custom-subtitle {
+  color: #547aae;
+}
+
+.text-custom-text {
+  color: #1f3161;
+}
+
+.text-menu-normal {
+  color: #547aae;
+}
+
+.text-menu-hover {
+  color: #7695be;
+}
+
+.text-menu-active {
+  color: #547aae;
+}
+
+/* Supprimer toutes les bordures du site sauf le footer */
+* {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Exception pour le footer */
+footer {
+  border: 4px solid red !important;
+}
+
+/* Exception pour la bordure du plan Google Maps */
+.map-border {
+  border: 4px solid #1f3161 !important;
+}
+
+/* Supprimer les bordures spécifiques */
+header, footer, section, div, nav, aside, main {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Supprimer les bordures des éléments de formulaire */
+input, textarea, select, button {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Supprimer les bordures des liens */
+a {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+/* Supprimer les bordures des images */
+img {
+  border: none !important;
+}
+
+@layer components {
+  /* Appliquer les couleurs par défaut */
+  .text-title {
+    color: #1f3161; /* Updated from #595959 */
+  }
+
+  .text-subtitle {
+    color: #547aae; /* Updated from #679099 */
+  }
+
+  .text-body {
+    color: #1f3161; /* Updated from #8f8f8f */
+  }
+
+  .bg-custom-background {
+    background-color: #e2e5e4;
+  }
+
+  /* Nouvelles couleurs de menu */
+  .text-menu-normal {
+    color: #547aae;
+  }
+
+  .text-menu-hover {
+    color: #7695be;
+  }
+
+  .text-menu-active {
+    color: #547aae;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 

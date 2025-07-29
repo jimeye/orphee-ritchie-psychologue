@@ -1,0 +1,11 @@
+# Configuration email pour l'envoi des formulaires de contact
+# Créez un fichier .env.local à la racine du projet avec ces variables :
+
+EMAIL_USER=votre_email@gmail.com
+EMAIL_PASS=votre_mot_de_passe_d_application
+
+# Instructions pour configurer Gmail :
+# 1. Activez l'authentification à 2 facteurs sur votre compte Gmail
+# 2. Générez un mot de passe d'application dans les paramètres de sécurité
+# 3. Utilisez ce mot de passe d'application comme EMAIL_PASS
+# 4. Utilisez votre adresse Gmail comme EMAIL_USER 

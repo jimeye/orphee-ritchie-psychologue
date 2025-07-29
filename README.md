@@ -1,38 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Configuration Envoi d'Emails - Site Orphée Ritchie
 
-## Getting Started
+## Description
 
-First, run the development server:
+Le site web d'Orphée Ritchie dispose d'un système d'envoi d'emails intégré qui permet aux visiteurs d'envoyer des messages de contact directement depuis le site, sans passer par un client mail externe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Fonctionnalités
+
+- ✅ Formulaire de contact intégré
+- ✅ Envoi automatique vers `contact@orphee-ritchie.fr`
+- ✅ Validation des champs obligatoires
+- ✅ Gestion d'erreurs complète
+- ✅ Interface utilisateur avec feedback
+
+## Configuration Requise
+
+### 1. Créer le fichier `.env.local`
+
+Créez un fichier `.env.local` à la racine du projet avec :
+
+```env
+EMAIL_USER=votre_email@gmail.com
+EMAIL_PASS=votre_mot_de_passe_d_application
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configurer Gmail
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Pour utiliser Gmail comme serveur SMTP :
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. **Activez l'authentification à 2 facteurs** sur votre compte Gmail
+2. Allez dans **Paramètres Google > Sécurité**
+3. Générez un **"Mot de passe d'application"**
+4. Utilisez ce mot de passe comme `EMAIL_PASS`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 3. Variables d'environnement
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Variable | Description |
+|----------|-------------|
+| `EMAIL_USER` | Votre adresse Gmail |
+| `EMAIL_PASS` | Le mot de passe d'application généré |
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Installer les dépendances :**
+   ```bash
+   npm install nodemailer @types/nodemailer --legacy-peer-deps
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Créer le fichier `.env.local`** avec vos identifiants
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Redémarrer le serveur :**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+## Utilisation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Les visiteurs remplissent le formulaire de contact
+2. Le bouton "Envoyer le message" envoie directement l'email
+3. L'email arrive à `contact@orphee-ritchie.fr`
+4. Une confirmation s'affiche sur le site
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Structure des Fichiers
+
+```
+├── pages/
+│   ├── api/
+│   │   └── contact.ts          # API pour l'envoi d'emails
+│   └── contact.tsx             # Formulaire de contact
+├── .env.local                  # Configuration des identifiants (à créer)
+└── README.md                   # Ce fichier
+```
+
+## Sécurité
+
+- 🔒 Les identifiants sont stockés dans `.env.local` (non versionné)
+- 🔒 Validation côté serveur des données
+- 🔒 Gestion d'erreurs complète
+- 🔒 Pas d'exposition des identifiants dans le code
+
+## Dépannage
+
+Si les emails ne s'envoient pas :
+
+1. ✅ Vérifiez que `.env.local` existe et contient les bonnes valeurs
+2. ✅ Assurez-vous que l'authentification à 2 facteurs est activée
+3. ✅ Vérifiez que le mot de passe d'application est correct
+4. ✅ Consultez les logs du serveur pour les erreurs
+
+## Contact
+
+Pour toute question technique, contactez le développeur.
+
+---
+
+**Note :** Ce système remplace l'ancien système `mailto` par un envoi direct depuis le site web.

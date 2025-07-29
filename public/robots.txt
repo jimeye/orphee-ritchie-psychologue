@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: https://orphee-ritchie-psychologue.fr/sitemap.xml 
