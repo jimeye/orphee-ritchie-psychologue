@@ -47,7 +47,7 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-end items-center h-16">
+        <div className="flex justify-end items-center h-12">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 mx-auto">
             {navigation.map((item) => (
