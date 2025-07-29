@@ -31,10 +31,11 @@ const Header: React.FC = () => {
       if (currentScrollY > lastScrollY && currentScrollY > threshold) {
         // Scrolling down and past threshold
         setIsScrolled(true);
-      } else if (currentScrollY < lastScrollY) {
-        // Scrolling up
+      } else if (currentScrollY < lastScrollY && currentScrollY < threshold) {
+        // Scrolling up and back to top area
         setIsScrolled(false);
       }
+      // Si on remonte mais qu'on est encore en dessous du threshold, on garde le header caché
       
       setLastScrollY(currentScrollY);
     };
