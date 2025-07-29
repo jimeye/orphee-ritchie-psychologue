@@ -24,28 +24,21 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
-      // Seuil plus bas pour la page contact (pas de HeroSlider)
       const threshold = window.location.pathname === '/contact' ? 50 : 100;
-      
-      if (currentScrollY > lastScrollY && currentScrollY > threshold) {
-        // Scrolling down and past threshold
-        setIsScrolled(true);
-      } else if (currentScrollY < lastScrollY && currentScrollY < threshold) {
-        // Scrolling up and back to top area
-        setIsScrolled(false);
+
+      if (currentScrollY > threshold) {
+        setIsScrolled(true); // header caché
+      } else {
+        setIsScrolled(false); // header visible
       }
-      // Si on remonte mais qu'on est encore en dessous du threshold, on garde le header caché
-      
-      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <header 
