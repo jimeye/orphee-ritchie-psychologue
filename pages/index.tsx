@@ -86,9 +86,9 @@ const HomePage: React.FC = () => {
                         Accompagnement dès l&apos;âge de 3 ans pour les difficultés développementales et familiales avec une approche personnalisée.
                       </p>
                     </div>
-                    <a href="/enfants" className="text-custom-subtitle hover:text-custom-title transition-colors">
+                    <Link href="/enfants" className="text-custom-subtitle hover:text-custom-title transition-colors">
                       En savoir plus →
-                    </a>
+                    </Link>
                   </div>
                 </div>
                                 <div className="text-center">
@@ -99,9 +99,9 @@ const HomePage: React.FC = () => {
                         Thérapies pour les troubles anxieux, dépressifs et les difficultés de vie quotidienne avec un accompagnement adapté.
                       </p>
                     </div>
-                    <a href="/adultes" className="text-custom-subtitle hover:text-custom-title transition-colors">
+                    <Link href="/adultes" className="text-custom-subtitle hover:text-custom-title transition-colors">
                       En savoir plus →
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="text-center">
@@ -112,9 +112,9 @@ const HomePage: React.FC = () => {
                         Évaluation complète des capacités cognitives et émotionnelles pour diagnostic avec des outils spécialisés.
                       </p>
                     </div>
-                    <a href="/bilan-psychologique" className="text-custom-subtitle hover:text-custom-title transition-colors">
+                    <Link href="/bilan-psychologique" className="text-custom-subtitle hover:text-custom-title transition-colors">
                       En savoir plus →
-                    </a>
+                    </Link>
                   </div>
                 </div>
                                 <div className="text-center">
@@ -125,9 +125,9 @@ const HomePage: React.FC = () => {
                         Thérapie de couple pour retrouver l&apos;harmonie et améliorer la communication avec des techniques éprouvées.
                       </p>
                     </div>
-                    <a href="/couple" className="text-custom-subtitle hover:text-custom-title transition-colors">
+                    <Link href="/couple" className="text-custom-subtitle hover:text-custom-title transition-colors">
                       En savoir plus →
-                    </a>
+                    </Link>
                   </div>
                 </div>
                                 <div className="text-center">
@@ -138,9 +138,9 @@ const HomePage: React.FC = () => {
                         Soutien adapté pour cette période de transition et de construction identitaire avec un suivi personnalisé.
                       </p>
                     </div>
-                    <a href="/adolescents" className="text-custom-subtitle hover:text-custom-title transition-colors">
+                    <Link href="/adolescents" className="text-custom-subtitle hover:text-custom-title transition-colors">
                       En savoir plus →
-                    </a>
+                    </Link>
                   </div>
                 </div>
           </div>

@@ -255,7 +255,7 @@ const ContactPage: React.FC = () => {
           </h2>
           <p className="text-lg text-custom-text mb-8 max-w-2xl mx-auto">
             Réservez votre consultation en ligne via Doctolib. 
-            C'est simple, rapide et sécurisé.
+            C&apos;est simple, rapide et sécurisé.
           </p>
           <a
             href="https://www.doctolib.fr/psychologue/saint-jean-de-luz/orphee-ritchie"
