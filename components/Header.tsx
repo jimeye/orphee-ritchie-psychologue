@@ -25,8 +25,11 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down and past 100px
+      // Seuil plus bas pour la page contact (pas de HeroSlider)
+      const threshold = window.location.pathname === '/contact' ? 50 : 100;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > threshold) {
+        // Scrolling down and past threshold
         setIsScrolled(true);
       } else if (currentScrollY < lastScrollY) {
         // Scrolling up
