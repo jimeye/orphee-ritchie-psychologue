@@ -5,7 +5,7 @@ const MentionsLegales: React.FC = () => {
   return (
     <Layout
       title="Mentions légales - Orphée Ritchie Psychologue"
-      description="Mentions légales du cabinet d'Orphée Ritchie, psychologue à Saint Jean de Luz."
+      description="Mentions légales du cabinet d&apos;Orphée Ritchie, psychologue à Saint Jean de Luz."
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <h1 className="text-3xl font-bold text-custom-title mb-8 text-center">
@@ -45,13 +45,13 @@ const MentionsLegales: React.FC = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-custom-title mb-4">4. Propriété intellectuelle</h2>
-            <p className="mb-4">
-              L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur 
-              et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour 
-              les documents téléchargeables et les représentations iconographiques et photographiques.
+            <p>
+              L&apos;ensemble de ce site relève de la législation française et internationale sur le droit d&apos;auteur
+              et de la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les
+              documents téléchargeables et les représentations iconographiques et photographiques.
             </p>
-            <p className="mb-4">
-              La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit 
+            <p>
+              La reproduction de tout ou partie de ce site sur un support électronique quel qu&apos;il soit
               est formellement interdite sauf autorisation expresse du directeur de la publication.
             </p>
           </section>
@@ -64,51 +64,45 @@ const MentionsLegales: React.FC = () => {
               ou des lacunes.
             </p>
             <p className="mb-4">
-              Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, 
-              merci de bien vouloir le signaler par email à l'adresse contact@orphéeritchie.org.
+              Pour toute question concernant l&apos;utilisation du site ou pour signaler un contenu inapproprié,
+              merci de bien vouloir le signaler par email à l&apos;adresse contact@orphee-ritchie.fr.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-custom-title mb-4">6. Liens hypertextes</h2>
-            <p className="mb-4">
-              Les liens hypertextes mis en place dans le cadre du présent site web en direction d'autres 
-              ressources présentes sur le réseau Internet ne sauraient engager la responsabilité d'Orphée Ritchie.
+            <p>
+              Les liens hypertextes mis en place dans le cadre du présent site web en direction d&apos;autres
+              ressources présentes sur le réseau Internet ne sauraient engager la responsabilité d&apos;Orphée Ritchie.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-custom-title mb-4">7. Cookies</h2>
-            <p className="mb-4">
-              Le site peut-être amené à vous demander l'acceptation des cookies pour des besoins de 
-              statistiques et d'affichage. À défaut d'acceptation, les cookies ne sont pas déposés.
+            <p>
+              Le site peut-être amené à vous demander l&apos;acceptation des cookies pour des besoins de
+              statistiques et d&apos;affichage. À défaut d&apos;acceptation, les cookies ne sont pas déposés.
             </p>
-            <p className="mb-4">
-              Nous utilisons uniquement des cookies techniques nécessaires au fonctionnement du site. 
-              Aucun cookie de suivi ou de publicité n'est utilisé.
+            <p>
+              Aucun cookie de suivi ou de publicité n&apos;est utilisé.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-custom-title mb-4">8. Services tiers</h2>
-            <p className="mb-4">
-              Ce site utilise les services suivants :
-            </p>
-            <ul className="list-disc pl-6 mb-4 space-y-2">
-              <li><strong>Doctolib :</strong> Pour la prise de rendez-vous en ligne</li>
-              <li><strong>Google Maps :</strong> Pour l'affichage de la localisation du cabinet</li>
+            <p>Ce site utilise les services tiers suivants :</p>
+            <ul className="list-disc list-inside space-y-2 mb-4">
+              <li><strong>Google Maps :</strong> Pour l&apos;affichage de la localisation du cabinet</li>
             </ul>
-            <p className="mb-4">
-              Ces services tiers ont leurs propres politiques de confidentialité et conditions d'utilisation.
+            <p>
+              Ces services tiers ont leurs propres politiques de confidentialité et conditions d&apos;utilisation.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-custom-title mb-4">9. Droit applicable</h2>
-            <p className="mb-4">
-              Tout litige en relation avec l'utilisation du site orphéeritchie.org est soumis au droit français. 
-              En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction 
-              aux tribunaux compétents de Bayonne.
+            <p>
+              Tout litige en relation avec l&apos;utilisation du site orphee-ritchie.fr est soumis au droit français.
             </p>
           </section>
 

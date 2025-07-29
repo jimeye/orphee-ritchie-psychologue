@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
             </h2>
             <div className="text-lg text-custom-text max-w-4xl mx-auto text-left space-y-4">
               <p>
-                Psychologue, psychothérapeute, diplômée de l'Université Paris X Nanterre, bilingue anglaise, 
+                Psychologue, psychothérapeute, diplômée de l&apos;Université Paris X Nanterre, bilingue anglaise, 
                 je vous accueille à mon cabinet de Saint Jean de Luz, afin de mettre en place une prise en charge 
                 ciblée et intégrative, adaptée à votre demande et vos spécificités.
               </p>
@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
                 La psychothérapie se déroule en deux temps.
               </p>
               <p>
-                L'évaluation s'engage dès le premier entretien. Cette étape permet de définir la nature des 
+                L&apos;évaluation s&apos;engage dès le premier entretien. Cette étape permet de définir la nature des 
                 difficultés psychologiques ou des troubles rencontrés, et ainsi établir avec le patient les 
                 objectifs du travail psychothérapeutique et les moyens mis en œuvre pour les atteindre.
               </p>
@@ -41,9 +41,9 @@ const HomePage: React.FC = () => {
                 les situations problématiques exposées par le patient.
               </p>
               <p>
-                A l'issue de la psychothérapie, une évolution objective de la situation devra être observée 
+                A l&apos;issue de la psychothérapie, une évolution objective de la situation devra être observée 
                 permettant de mettre un terme à la prise en charge. Certains patients peuvent ensuite souhaiter 
-                approfondir des aspects cognitifs spécifiques en poursuivant les rendez-vous ou en s'engageant 
+                approfondir des aspects cognitifs spécifiques en poursuivant les rendez-vous ou en s&apos;engageant 
                 dans une autre forme de psychothérapie.
               </p>
               <div className="text-center">
@@ -83,7 +83,7 @@ const HomePage: React.FC = () => {
                     <div>
                                           <h3 className="text-xl font-semibold text-custom-title mb-4 text-center"><span className="text-custom-background">psychologique</span><br className="md:hidden" /> Enfants</h3>
                       <p className="text-custom-text mb-0 md:mb-4 text-justify md:text-center">
-                        Accompagnement dès l'âge de 3 ans pour les difficultés développementales et familiales avec une approche personnalisée.
+                        Accompagnement dès l&apos;âge de 3 ans pour les difficultés développementales et familiales avec une approche personnalisée.
                       </p>
                     </div>
                     <a href="/enfants" className="text-custom-subtitle hover:text-custom-title transition-colors">
@@ -122,7 +122,7 @@ const HomePage: React.FC = () => {
                     <div>
                                           <h3 className="text-xl font-semibold text-custom-title mb-4 text-center"><span className="text-custom-background">psychologique</span><br className="md:hidden" /> Couple</h3>
                       <p className="text-custom-text mb-0 md:mb-4 text-justify md:text-center">
-                        Thérapie de couple pour retrouver l'harmonie et améliorer la communication avec des techniques éprouvées.
+                        Thérapie de couple pour retrouver l&apos;harmonie et améliorer la communication avec des techniques éprouvées.
                       </p>
                     </div>
                     <a href="/couple" className="text-custom-subtitle hover:text-custom-title transition-colors">

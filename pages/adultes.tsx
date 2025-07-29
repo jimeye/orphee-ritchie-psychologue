@@ -111,10 +111,10 @@ const AdultesPage: React.FC = () => {
       <section className="bg-custom-background py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-custom-title mb-6">
-            Besoin d'aide pour vous-même ?
+            Besoin d&apos;aide pour vous-même ?
           </h2>
           <p className="text-lg text-custom-text mb-8 max-w-2xl mx-auto">
-            N'hésitez pas à prendre rendez-vous pour une première consultation. 
+            N&apos;hésitez pas à prendre rendez-vous pour une première consultation. 
             Je suis là pour vous accompagner dans votre parcours de soins.
           </p>
           <a

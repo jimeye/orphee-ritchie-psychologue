@@ -140,7 +140,7 @@ const ContactPage: React.FC = () => {
                 >
                   <option value="">Choisissez un sujet</option>
                   <option value="consultation">Prise de rendez-vous</option>
-                  <option value="information">Demande d'information</option>
+                  <option value="information">Demande d&apos;information</option>
                   <option value="bilan">Bilan psychologique</option>
                   <option value="autre">Autre</option>
                 </select>
@@ -186,7 +186,7 @@ const ContactPage: React.FC = () => {
               Contactez-moi
             </h2>
             <p className="text-lg text-custom-text max-w-3xl mx-auto">
-              N'hésitez pas à me contacter pour toute question ou pour prendre rendez-vous. 
+              N&apos;hésitez pas à me contacter pour toute question ou pour prendre rendez-vous. 
               Je suis là pour vous accompagner dans votre parcours de soins.
             </p>
           </div>

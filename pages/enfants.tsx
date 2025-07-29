@@ -46,7 +46,7 @@ const EnfantsPage: React.FC = () => {
       <section className="bg-custom-background py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-custom-title text-center mb-12">
-            Mes domaines d'intervention
+            Mes domaines d&apos;intervention
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
             <div className="bg-custom-background rounded-lg p-6 shadow-sm">
@@ -75,7 +75,7 @@ const EnfantsPage: React.FC = () => {
       <section className="bg-custom-background py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-custom-title text-center mb-12">
-            Comment se déroule l'accompagnement ?
+            Comment se déroule l&apos;accompagnement ?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
             <div className="text-center">
@@ -133,11 +133,11 @@ const EnfantsPage: React.FC = () => {
       <section className="bg-custom-background py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-custom-title mb-6">
-            Besoin d'aide pour votre enfant ?
+            Besoin d&apos;aide pour votre enfant ?
           </h2>
           <p className="text-lg text-custom-text mb-8 max-w-2xl mx-auto">
-            N'hésitez pas à prendre rendez-vous pour une première consultation. 
-            Je suis là pour accompagner votre enfant dans son développement.
+            N&apos;hésitez pas à prendre rendez-vous pour une première consultation. 
+            Je suis là pour accompagner votre enfant dans cette période de développement.
           </p>
           <a
             href="https://www.doctolib.fr/psychologue/saint-jean-de-luz/orphee-ritchie"
