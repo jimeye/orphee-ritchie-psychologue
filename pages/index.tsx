@@ -1,11 +1,68 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const HomePage: React.FC = () => {
+  const router = useRouter();
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // Pages dans l'ordre du menu
+  const pages = [
+    { path: '/', name: 'Accueil' },
+    { path: '/enfants', name: 'Enfants' },
+    { path: '/adultes', name: 'Adultes' },
+    { path: '/couple', name: 'Couple' },
+    { path: '/adolescents', name: 'Adolescents' },
+    { path: '/bilan-psychologique', name: 'Bilan' },
+    { path: '/contact', name: 'Contact' }
+  ];
+
+  // Gestion du swipe
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe || isRightSwipe) {
+      const currentIndex = pages.findIndex(page => page.path === router.pathname);
+      let nextIndex;
+
+      if (isLeftSwipe) {
+        // Swipe gauche = page suivante
+        nextIndex = (currentIndex + 1) % pages.length;
+      } else {
+        // Swipe droite = page précédente
+        nextIndex = currentIndex === 0 ? pages.length - 1 : currentIndex - 1;
+      }
+
+      if (pages[nextIndex].path !== '/') {
+        router.push(pages[nextIndex].path);
+      }
+    }
+  };
+
   return (
     <Layout>
+      <div 
+        className="min-h-screen"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
                 {/* Section Introduction */}
           <section className="bg-custom-background py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -174,6 +231,7 @@ const HomePage: React.FC = () => {
           <div className="mt-2 w-full h-0.5 bg-custom-text"></div>
         </div>
       </section>
+      </div>
     </Layout>
   );
 };
